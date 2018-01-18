@@ -151,3 +151,6 @@
 [submodule "vim/bundle/vim-rhubarb"]
 	path = vim/bundle/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb
+[submodule "vim/fonts/source-code-pro"]
+	path = vim/fonts/source-code-pro
+	url = https://github.com/adobe-fonts/source-code-pro.git

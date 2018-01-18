@@ -29,6 +29,15 @@ install_vimrc () {
     ln -s "$INSTALL_TO/vimrc/vim" .vim
     touch ~/.vim/user.vim
 
+    echo "installing fonts..."
+    if [ ! -e "~/.fonts" ]; then
+        mkdir "~/.fonts"
+    fi 
+    FONTS=$INSTALL_TO/vimrc/vim/fonts*.otf
+    for f in  $FONTS; do
+        ln -s "$INSTALL_TO/vimrc/vim/fonts/$f ~/.fonts/$f" 
+    done
+    sudo fc-cache -fv
     echo "Installed and configured .vim, have fun."
 }
 
