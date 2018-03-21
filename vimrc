@@ -50,7 +50,7 @@ set smartcase                   " ignore case if search pattern is all lowercase
 set smarttab                    " insert tabs on the start of a line according to
                                 "    shiftwidth, not tabstop
 set scrolloff=4                 " keep 4 lines off the edges of the screen when scrolling
-set virtualedit=all             " allow the cursor to go in to "invalid" places
+"set virtualedit=all             " allow the cursor to go in to "invalid" places
 set hlsearch                    " highlight search terms
 set incsearch                   " show search matches as you type
 set gdefault                    " search/replace "globally" (on a line) by default
@@ -662,7 +662,7 @@ iab lllorem Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam lacu
 "set guifont=Mensch\ for\ Powerline:h14 linespace=0
 "set guifont=saxMono:h14 linespace=3
 "set guifont=Ubuntu\ Mono:h18 linespace=3
-set guifont=Source\ Code\ Pro\ Light:h10 linespace=0
+set guifont=Source\ Code\ Pro\ Light\ 10
 
 if has("gui_running")
     " Remove toolbar, left scrollbar and right scrollbar
@@ -671,7 +671,7 @@ if has("gui_running")
     set guioptions-=L
     set guioptions-=r
     set guioptions-=R
-    set guifont=Source\ Code\ Pro\ Light:h13 linespace=0
+    set guifont=Source\ Code\ Pro\ Light\ 13
 else
     set bg=dark
 endif
@@ -787,9 +787,8 @@ nnoremap <leader>b :CtrlPBuffer<cr>
 inoremap <c-u> <esc>viwUea
 nnoremap <c-u> viwUe
 
-iabbr m@@ me@nvie.com
-iabbr v@@ vincent@3rdcloud.com
-iabbr ssig --<cr>Vincent Driessen<cr>vincent@3rdcloud.com
+iabbr m@@ kim@schulz.dk
+iabbr ssig --<cr>Kim Schulz<cr>kim@schulz.dk
 
 " Quote words under cursor
 nnoremap <leader>" viW<esc>a"<esc>gvo<esc>i"<esc>gvo<esc>3l
